@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+</head>
+<body>
+  <h1>My Portfolio</h1>
+  
+  <div id="portfolio-container">
+    <div class="portfolio-item">
+      <img src="project1.jpg" alt="Project 1">
+      <h2>Project 1</h2>
+      <p>Description of project 1.</p>
+    </div>
+    <div class="portfolio-item">
+      <img src="project2.jpg" alt="Project 2">
+      <h2>Project 2</h2>
+      <p>Description of project 2.</p>
+    </div>
+    <div class="portfolio-item">
+      <img src="project3.jpg" alt="Project 3">
+      <h2>Project 3</h2>
+      <p>Description of project 3.</p>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript code to change image size
+
+    // Get all portfolio item images
+    const portfolioImages = document.querySelectorAll('.portfolio-item img');
+
+    // Set the image dimensions
+    portfolioImages.forEach(image => {
+      image.width = 200;
+      image.height = 150;
+    });
+  </script>
+</body>
+</html>
